@@ -13,14 +13,19 @@ class Search extends Component {
 
  render() {
    return (
-     <form>
-       <input
-         placeholder="Search for..."
-         ref={input => this.search = input}
-         onChange={this.handleInputChange}
-       />
-       <p>{this.state.query}</p>
-     </form>
+     <div>
+       <form>
+         <input
+           placeholder="Search for..."
+           ref={input => this.search = input}
+           onChange={this.handleInputChange}
+         />
+         <p>{this.state.query}</p>
+       </form>
+       <div>
+         {this.state.query}
+       </div>
+     </div>
    )
  }
 }
