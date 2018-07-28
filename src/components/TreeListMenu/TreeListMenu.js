@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Search from './Search';
-//import './tree-list-menu.css';
+import './TreeListMenu.css';
 
 var TreeListMenu = () => {
 	return (
-	  <div>
+	  <div className= "tree-list-container">
 	    <div className = "search-tree-list">
 	      <Search />
+	      testing..
 	    </div>
 	  </div>
 	);
